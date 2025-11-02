@@ -1,0 +1,77 @@
+/* ------------------------------
+   HALAMAN SEJARAH - Ma'soem University
+------------------------------ */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8fbff;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* KONTEN UTAMA */
+.sejarah-section {
+  padding: 60px 10%;
+  background: #fff;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-top: 60px;
+}
+
+.sejarah-section h1 {
+  font-size: 2.2rem;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sejarah-section h2 {
+  color: #004080;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.info-box {
+  background: #f1f6fc;
+  border-left: 4px solid #004080;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  color: #002b5c;
+  font-size: 0.95rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sejarah-section {
+    padding: 40px 6%;
+  }
+
+  .sejarah-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .sejarah-section h2 {
+    font-size: 1.15rem;
+  }
+
+  .info-box {
+    font-size: 0.9rem;
+  }
+}

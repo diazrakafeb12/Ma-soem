@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+.header-prodi {
+  position: relative;
+  margin-top: 120px;
+  height: 70vh;
+  background: url('../img/ifhead.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.overlay-prodi {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0,30,60,0.8), rgba(0,10,40,0.8));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+.judul-prodi {
+  font-size: 2.8rem;
+  text-shadow: 0 0 20px rgba(0,180,255,0.8);
+}
+
+.subjudul-prodi {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* DESKRIPSI */
+.desc-informatika {
+  padding: 80px 10%;
+  background: #f5faff;
+  text-align: center;
+  color: #333;
+}
+
+.desc-informatika p {
+  max-width: 900px;
+  margin: 15px auto;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* VISI MISI */
+.vmt-informatika {
+  background: linear-gradient(135deg, #002b40, #001a26);
+  color: white;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.vmt-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.vmt-card {
+  width: 350px;
+  background: rgba(0,100,200,0.1);
+  border: 2px solid rgba(0,200,255,0.3);
+  border-radius: 20px;
+  padding: 30px;
+  transition: 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+.vmt-card i {
+  font-size: 2rem;
+  color: #00c8ff;
+  margin-bottom: 15px;
+}
+
+.vmt-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0,200,255,0.4);
+}
+
+.vmt-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.vmt-card ul li {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* PROSPEK KARIR */
+.prospek-informatika {
+  padding: 80px 10%;
+  background: #eef6ff;
+  text-align: center;
+}
+
+.prospek-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.prospek-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.prospek-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,120,255,0.3);
+}
+
+.prospek-card i {
+  font-size: 2rem;
+  color: #0077ff;
+  margin-bottom: 10px;
+}
+
+/* ANIMASI */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.scroll-animate.scrolled {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}

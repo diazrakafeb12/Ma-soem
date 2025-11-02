@@ -1,0 +1,169 @@
+/* ===== HEADER FAPERTA ===== */
+.header-fkip {
+  position: relative;
+  background: url('../img/headfkip.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+.overlay-fkip {
+  position: absolute;
+  inset: 0;
+  background: rgba(53, 0, 100, 0.813);
+}
+
+.judul-fkip {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgba(0, 200, 255, 0.8);
+}
+
+.subjudul-febi {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===== ARTIKEL ===== */
+.artikel-fkip {
+  max-width: 900px;
+  margin: 40px auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #333;
+  padding: 0 20px;
+}
+
+/* ===== GARIS PEMBATAS ===== */
+.garis-fkip {
+  width: 100px;
+  height: 4px;
+  background: #6e2e8b;
+  margin: 40px auto 20px;
+  border-radius: 2px;
+}
+
+/* ===== PROGRAM STUDI ===== */
+.program-studi-fkip {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.judul-prodi {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #370064;
+}
+
+.prodi-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-prodi-fkip {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 2px solid rgba(46, 103, 139, 0.4);
+  border-radius: 16px;
+  width: 300px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 16px rgba(0, 80, 100, 0.1);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.card-prodi-fkip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-prodi-fkip:hover {
+  transform: translateY(-10px);
+  border-color: #2e778b;
+  box-shadow: 0 8px 20px rgba(46, 111, 139, 0.25);
+}
+
+.icon-prodi {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.breadcrumb span {
+  color: #333;
+}
+
+/* ===== VISI MISI TUJUAN ===== */
+.visi-misi-fkip {
+  background: linear-gradient(to bottom right, #eaf7ea, #ffffff);
+  padding: 60px 20px;
+  margin-bottom: 40px;
+}
+
+.judul-vmf {
+  text-align: center;
+  color: #530064;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.isi-vmf {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  border: 2px solid rgba(111, 46, 139, 0.269);
+  box-shadow: 0 4px 12px rgba(0, 100, 0, 0.1);
+}
+
+.isi-vmf h3 {
+  color: #752e8b;
+  margin-top: 20px;
+}
+
+.isi-vmf ul {
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

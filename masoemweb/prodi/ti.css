@@ -1,0 +1,132 @@
+/* HEADER */
+.header-ti {
+  position: relative;
+  height: 70vh;
+  background: url('../img/tihead.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 125px;
+  text-align: center;
+}
+
+.overlay-ti {
+  background: rgba(105, 57, 8, 0.587);
+  width: 100%;
+  height: 100%;
+  padding: 100px 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.judul-ti {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-shadow: 0 0 20px rgba(255, 120, 0, 0.9);
+}
+
+.subjudul-ti {
+  font-size: 1.2rem;
+  color: #ffe0b3;
+}
+
+/* DESKRIPSI */
+.desc-ti {
+  background: #fafafa;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.desc-ti .content-ti {
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* VISI MISI TUJUAN */
+.vmt-ti {
+  background: #fff4e6;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.vmt-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin-top: 30px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.vmt-card:hover {
+  transform: translateY(-5px);
+}
+
+.vmt-card h3 {
+  color: #ff7b00;
+  margin-bottom: 15px;
+}
+
+.vmt-card ol {
+  padding-left: 20px;
+}
+
+/* PROSPEK KARIR */
+.prospek-ti {
+  background: linear-gradient(180deg, #fff, #f8f1e9);
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.prospek-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.prospek-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.prospek-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(255, 140, 0, 0.3);
+}
+
+.prospek-card i {
+  font-size: 2.5rem;
+  color: #ff7b00;
+  margin-bottom: 15px;
+}
+
+.line-ti {
+  width: 70px;
+  height: 4px;
+  background: #ff7b00;
+  margin: 10px auto 40px auto;
+  border-radius: 2px;
+}
+/* ANIMASI SAAT SCROLL */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-animate.scrolled {
+  opacity: 1;
+  transform: translateY(0);
+}

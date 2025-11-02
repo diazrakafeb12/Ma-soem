@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+.header-febi {
+  position: relative;
+  height: 60vh;
+  background: url('../img/pshead.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 120px;
+}
+
+.overlay-febi {
+  background: linear-gradient(rgba(0, 50, 100, 0.8), rgba(0, 0, 40, 0.8));
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.judul-febi {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgba(0, 200, 255, 0.8);
+}
+
+.subjudul-febi {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* SECTION */
+.prodi-febi {
+  padding: 80px 10%;
+  text-align: center;
+  background: #f7faff;
+}
+
+.prodi-febi.alt-bg {
+  background: #eaf4ff;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #003366;
+}
+
+.line-febi {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #00aaff, #0055ff);
+  margin: 15px auto 30px;
+  border-radius: 2px;
+}
+
+.deskripsi {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* CARDS */
+.vmt-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.vmt-card {
+  width: 300px;
+  background: #fff;
+  border: 2px solid rgba(0, 150, 255, 0.3);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.vmt-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,100,255,0.3);
+}
+
+.vmt-card i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.vmt-card ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.vmt-card ul li {
+  margin: 8px 0;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate.scrolled {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .vmt-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .vmt-card {
+    width: 90%;
+  }
+  .judul-febi {
+    font-size: 2rem;
+  }
+  .subjudul-febi {
+    font-size: 1rem;
+  }
+}

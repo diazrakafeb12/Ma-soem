@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visi & Misi Ma'soem University</title>
+  <link rel ="icon" type ="image/png" href="../favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../nav&footer.css">
+  <link rel="stylesheet" href="visimisi.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<!--  TOPBAR  -->
+<div class="topbar">
+  <div class="topbar-container">
+    <div class="topbar-left">
+      <div class="topbar-card"><a href="../perpustakaan/perpustakaan.html">Perpustakaan</a></div>
+      <div class="topbar-card"><a href="https://siakad.masoemuniversity.com/login">SIAKAD</a></div>
+      <div class="topbar-card"><a href="https://pmb.masoemuniversity.com/">Pendaftaran</a></div>
+    </div>
+
+    <div class="topbar-right">
+      <div class="search-card">
+        <input type="text" placeholder="Cari..." />
+        <button><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <!-- NAVBAR -->
+     <header>
+<nav class="navbar">
+  <div class="logo">
+    <a href="../index.html">
+    <img src="../img/logomasoem.png" alt="Logo Universitas"></a>
+  </div>
+  <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li class="dropdown">
+          <a href="../index.html">Tentang kami ▾</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-sub">
+            <li><a href="../rektor/rektor.html">Salam dari Rektor</a></li>
+            <li><a href="../sejarah/sejarah.html">Sejarah</a></li>
+            <li><a href="../visimisi/visimisi.html">Visi & Misi</a></li>
+            <li><a href="../dosen/dosen.html">Dosen</a></li>
+          </ul>
+        </li>
+
+    <li class="dropdown">
+      <a href="../fakultas/fakultas.html">Fakultas ▾</a>
+      <ul class="dropdown-menu">
+        <li class="dropdown-sub">
+          <a href="../fakultas/febi.html">Fakultas Ekonomi dan Bisnis Islam ▾</a>
+          <ul class="sub-menu">
+            <li><a href="../prodi/mbs.html">Manajemen Bisnis Syariah</a></li>
+            <li><a href="../prodi/ps.html">Perbankan Syariah</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-sub">
+          <a href="../fakultas/faperta.html">Fakultas Pertanian ▾</a>
+          <ul class="sub-menu">
+            <li><a href="../prodi/agri.html">Agribisnis</a></li>
+            <li><a href="../prodi/tp.html">Teknologi Pangan</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-sub">
+          <a href="../fakultas/fkip.html">Fakultas Keguruan & Ilmu Pendidikan ▾</a>
+          <ul class="sub-menu">
+            <li><a href="../prodi/pbi.html">Pendidikan Bahasa Inggris</a></li>
+            <li><a href="../prodi/bk.html">Bimbingan & Konseling</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-sub">
+          <a href="../fakultas/fkom.html">Fakultas Komputer ▾</a>
+          <ul class="sub-menu">
+            <li><a href="../prodi/bd.html">Bisnis Digital</a></li>
+            <li><a href="../prodi/si.html">Sistem Informasi</a></li>
+            <li><a href="../prodi/KA.html">Komputerisasi Akuntansi</a></li>
+          </ul>
+        </li>
+        <li class="dropdown-sub">
+          <a href="../fakultas/ftek.html">Fakultas Teknik ▾</a>
+          <ul class="sub-menu">
+            <li><a href="../prodi/ti.html">Teknik Industri</a></li>
+            <li><a href="../prodi/if.html">Teknik Informatika</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="dropdown">
+          <a href="../lppm/lppm.html">LPPM ▾</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-sub">
+            <li><a href="https://jurnal.masoemuniversity.ac.id/">Penelitian</a></li>
+            <li><a href="https://jurnal.masoemuniversity.ac.id/index.php/abdimu">Pengabdian Kepada Maasyarakat</a></li>
+            <li><a href="https://masoemuniversity.ac.id/lppm/laporan-lpm-dosen.php">Laporan PKM Dosen</a></li>
+          </ul>
+        </li>
+       <li><a href="../berita/berita.html">Berita</a></li>
+    <li><a href="../kontak/kontak.html">Kontak Kami</a></li>
+  </ul>
+</nav>
+</header>
+ 
+  <!-- Script untuk garis tiga -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      toggle.classList.toggle('open');
+    });
+
+    // Mencegah klik submenu di HP agar bisa buka/tutup
+    const dropdownSubs = document.querySelectorAll('.dropdown-sub > a');
+    dropdownSubs.forEach(link => {
+      link.addEventListener('click', e => {
+        if (window.innerWidth <= 900) {
+          e.preventDefault();
+          const subMenu = link.nextElementSibling;
+          subMenu.classList.toggle('open');
+        }
+      });
+    });
+  </script>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb">
+    <a href="../index.html">Beranda</a>
+    <span>›</span>
+    <a href="../index.html">Tentang Kami</a>
+    <span>›</span>
+    <span>Visi & Misi</span>
+  </nav>
+
+  <!-- Konten Utama -->
+  <section class="vmt-section">
+    <h1>Visi, Misi, dan Tujuan</h1>
+
+    <div class="vmt-box">
+      <h2>Visi</h2>
+      <p><em>"Menjadi Perguruan Tinggi bermutu tinggi di Indonesia pada Tahun 2038 dengan Karakter Cageur, Bageur, Pinter."</em></p>
+    </div>
+
+    <div class="vmt-box">
+      <h2>Misi</h2>
+      <ul>
+        <li>Menyelenggarakan pendidikan tinggi berkualitas berbasis religius dan entrepreneurship;</li>
+        <li>Melaksanakan penelitian yang berkualitas yang dapat berperan meningkatkan daya saing nasional;</li>
+        <li>Menyelenggarakan layanan pengabdian kepada masyarakat secara profesional;</li>
+        <li>Menyelenggarakan pendidikan berstandar nasional melalui kemitraan dan jejaring nasional, regional maupun global;</li>
+        <li>Membina civitas akademika dengan karakter Cageur, Bageur, Pinter; dan</li>
+        <li>Menjalin kerjasama dengan instansi/lembaga/perusahaan yang mendukung terselenggaranya Tri Dharma Perguruan Tinggi.</li>
+      </ul>
+    </div>
+
+    <div class="vmt-box">
+      <h2>Tujuan</h2>
+      <ul>
+        <li>Menghasilkan lulusan yang berkualitas, berjiwa entrepreneur dan profesional dalam berbagai disiplin ilmu yang dikembangkan;</li>
+        <li>Menghasilkan penelitian dan produk yang berkualitas dan dapat berperan meningkatkan daya saing nasional;</li>
+        <li>Menyelenggarakan layanan pengabdian kepada masyarakat secara profesional;</li>
+        <li>Menyelenggarakan pendidikan berstandar nasional melalui kemitraan dan jejaring nasional, regional maupun global; dan</li>
+        <li>Menghasilkan civitas akademika dengan karakter Cageur, Bageur, Pinter.</li>
+      </ul>
+    </div>
+  </section>
+
+
+    <!-- ===== SPONSOR SECTION ===== -->
+<section class="sponsor">
+  <h1 class="sponsor-title">Partner</h1>
+  <div class="sponsor-logos">
+    <!-- 1. Air Al Ma'soem -->
+    <a href="https://airalmasoem.com" target="_blank">
+      <img src="../sponsor/air.png" alt="Air Al Ma'soem">
+    </a>
+
+    <!-- 2. Apotek Al Ma'soem -->
+
+      <img src="../sponsor/apotek.png" alt="Apotek Al Ma'soem">
+    </a>
+
+    <!-- 3. Ma'soem Arias -->
+    <a href="https://masoemarias.com" target="_blank">
+      <img src="../sponsor/arias.png" alt="Ma'soem Arias">
+    </a>
+
+    <!-- 4. BPRS Al Ma'soem -->
+    <a href="https://almasoembank.co.id/" target="_blank">
+      <img src="../sponsor/bprs.png" alt="BPRS Al Ma'soem">
+    </a>
+
+    <!-- 5. Cisco Networking Academy -->
+    <a href="https://www.netacad.com/" target="_blank">
+      <img src="../sponsor/cisco.png" alt="Cisco Networking Academy">
+    </a>
+
+    <!-- 6. iB Perbankan Syariah -->
+      <img src="../sponsor/ibps.png" alt="iB Perbankan Syariah">
+    </a>
+
+    <!-- 7. TryOut.id -->
+    <a href="https://tryout.id" target="_blank">
+      <img src="../sponsor/TOID.png" alt="TryOut.id">
+    </a>
+
+    <!-- 8. KAI -->
+    <a href="https://www.kai.id" target="_blank">
+      <img src="../sponsor/KAI.png" alt="Kereta Api Indonesia">
+    </a>
+
+    <!-- 9. Bank BJB -->
+    <a href="https://www.bankbjb.co.id" target="_blank">
+      <img src="../sponsor/bjb.png" alt="Bank BJB">
+    </a>
+
+    <!-- 10. Admin One Corp -->
+      <img src="../sponsor/onecorp.png" alt="Admin One Corp">
+
+    <!-- 11. MES Perbankan Ekonomi Syariah -->
+      <img src="../sponsor/MES.png" alt="MES Perbankan Ekonomi Syariah">
+  </div>
+</section>
+
+<!-- ===== FOOTER SECTION ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="../logomasoem.png" alt="Ma'soem University" class="footer-logo">
+    </div>
+
+    <div class="footer-center">
+      <p><strong>Ma'soem University</strong></p>
+      <p>Jl. Raya Cipacing No. 22 Jatinangor 45363 Jawa Barat</p>
+      <p>Telp : 022 7798340</p>
+      <p>WhatsApp : 08156033022</p>
+      <p>Email : info@masoemuniversity.ac.id</p>
+    </div>
+
+    <div class="footer-right">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/masoem_university/"><img src="../sponsor/Ig_logo.png" alt="Instagram"></a>
+        <a href="https://api.whatsapp.com/send/?phone=628156033022&text&type=phone_number&app_absent=0"><img src="../sponsor/icon-wa-200.png" alt="WhatsApp"></a>
+        <a href="https://www.youtube.com/channel/UCO1VjdbEQokcf2iijBckC7A"><img src="../sponsor/icon-yt-200.png" alt="YouTube"></a>
+      </div>
+      <div class="qr-code">
+        <img src="../sponsor/qr.jpg" alt="QR Code">
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* ------------------------------ 
+   SALAM DARI REKTOR - SIMPLE VERSION
+------------------------------ */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f9fbfd;
+  color: #333;
+  line-height: 1.8;
+}
+
+
+/* BREADCRUMB */
+.breadcrumbr{
+  background: #e9f1fa;
+  margin-top: 119px;
+  padding: 10px 8%;
+  font-size: 0.95rem;
+  color: #004080;
+}
+
+.breadcrumbr a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumbr span {
+  margin: 0 5px;
+  color: #555;
+}
+@media (max-width: 768px) {
+.breadcrumbr{
+
+  margin-top: 169px;
+}
+}
+/* KONTEN UTAMA */
+.rektor-section {
+  padding: 60px 10%;
+  background: #fff;
+}
+
+.rektor-section h1 {
+  font-size: 2.2rem;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.rektor-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* FOTO REKTOR */
+.foto-rektor img {
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* TEKS */
+.teks-rektor {
+  flex: 1;
+  min-width: 300px;
+  text-align: justify;
+}
+
+.teks-rektor p {
+  margin-bottom: 15px;
+}
+
+.teks-rektor .penutup {
+  margin-top: 25px;
+  font-style: italic;
+  color: #004080;
+}
+
+.ttd {
+  margin-top: 25px;
+  text-align: right;
+  font-size: 1rem;
+  color: #003366;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .rektor-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .foto-rektor img {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .teks-rektor {
+    text-align: justify;
+  }
+
+  .ttd {
+    text-align: center;
+  }
+}

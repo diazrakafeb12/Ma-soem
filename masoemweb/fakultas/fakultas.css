@@ -1,0 +1,81 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  background-color: #1a4372;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 120px;
+}
+
+.fakultas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.fakultas.reverse {
+  flex-direction: row-reverse;
+}
+
+.fakultas-text {
+  flex: 1;
+}
+
+.fakultas-text h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.fakultas-text p {
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.fakultas-img {
+  flex: 1;
+}
+
+.fakultas-img img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn {
+  background-color: #0074f9;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #0074f9;
+}
+
+/* Responsif */
+@media (max-width: 900px) {
+  .fakultas {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .fakultas.reverse {
+    flex-direction: column;
+  }
+  .fakultas-img {
+    order: -1;
+  }
+}

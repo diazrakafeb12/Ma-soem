@@ -1,0 +1,174 @@
+/* RESET DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HERO SECTION */
+.hero-perpus {
+  position: relative;
+  background: url('../img/perpus.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 120px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 40, 100, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* DESKRIPSI */
+.about-perpus {
+  text-align: center;
+  padding: 70px 10%;
+  background: #fff;
+}
+
+.about-perpus h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.about-perpus p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* FOTO PERPUSTAKAAN */
+.foto-perpus {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.foto-perpus img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.foto-perpus img:hover {
+  transform: scale(1.05);
+}
+
+
+/* LAYANAN */
+.layanan {
+  background: linear-gradient(135deg, #002b5c, #005fab);
+  color: white;
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.layanan h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.layanan-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.layanan-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  width: 250px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.layanan-card i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ffd35a;
+}
+
+.layanan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* KOLEKSI */
+.koleksi {
+  padding: 80px 10%;
+  text-align: center;
+  background: #f8f9fc;
+}
+
+.koleksi h2 {
+  margin-bottom: 40px;
+  color: #002b5c;
+}
+
+.koleksi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.koleksi-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.koleksi-card:hover {
+  transform: translateY(-8px);
+}
+
+.koleksi-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.koleksi-card h4 {
+  padding: 15px;
+  font-size: 1.1rem;
+  color: #003366;
+}
+
+/* RESPONSIF */
+@media (max-width: 768px) {
+  .hero-content h1 { font-size: 2rem; }
+  .layanan-card, .koleksi-card { width: 90%; }
+}
